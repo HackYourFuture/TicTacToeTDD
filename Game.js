@@ -17,6 +17,7 @@ Game.prototype.isWinner = function (player_symbol){
 	let res = false;
 	player_symbol = player_symbol.toLowerCase();
 	let board_str = this.board.replace(/(\r\n|\n|\r)/gm,"").toLowerCase();
+	//// Add Number Win
 	let winning_indexes =[
 		[0,1,2],
 		[3,4,5],
