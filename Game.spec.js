@@ -2,17 +2,17 @@ const PlayerOneSymbol = 'x';
 const PlayerTwoSymbol = 'o';
 const EmptySymbol = '-';
 
-const BoardEmpy = `
+const BoardEmpty = [`
  ---
  ---
  ---
-`;
+`];
 
-const BoardPlayerOneWins = `
+const BoardPlayerOneWins = [`
  x--
  -x-
  --x
-`;
+`]; 
 
 const BoardPlayerTwoWins = [
     `
@@ -89,6 +89,11 @@ describe('Game should be able to validate a sting board', () => {
     let currentGame;
     beforeEach(() => {
         currentGame = new Game;
+    });
+    
+    it('Should validate that  has no started the game ', () => {
+        currentGame.board = BoardEmpty;
+        expect(currentGame.getWinner()).toBe(0);
     });
 
     it('Should validate player one winner given a certain board', () => {
