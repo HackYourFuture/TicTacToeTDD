@@ -2,17 +2,17 @@ const PlayerOneSymbol = 'x';
 const PlayerTwoSymbol = 'o';
 const EmptySymbol = '-';
 
-const BoardEmpty = `
+const BoardEmpty = [`
  ---
  ---
  ---
-`;
+`];
 
-const BoardPlayerOneWins = `
+const BoardPlayerOneWins = [`
  x--
  -x-
  --x
-`;
+`]; 
 
 const BoardPlayerTwoWins = [
     `
