@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome Tic Tac Toe game</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>Before starting the game players should choose between X or O</h1>
+    
+    <input type="button" id="startGame" value="Start game" onclick="newGame.startGame()">
+    <input type="button" id="startNewGame" value="Start a new game" onclick="newGame.startNewGame()" style="display: none">
+
+    <h2 id="message"></h2>
+    <table border="1" id="gameBoard">
+        <tr>
+            <td class="cells" id="num1" onclick="newGame.play(this)"></td>
+            <td class="cells" id="num2" onclick="newGame.play(this)"></td>
+            <td class="cells" id="num3" onclick="newGame.play(this)"></td>
+        </tr>
+        <tr>
+            <td class="cells" id="num4" onclick="newGame.play(this)"></td>
+            <td class="cells" id="num5" onclick="newGame.play(this)"></td>
+            <td class="cells" id="num6" onclick="newGame.play(this)"></td>
+        </tr>
+        <tr>
+            <td class="cells" id="num7" onclick="newGame.play(this)"></td>
+            <td class="cells" id="num8" onclick="newGame.play(this)"></td>
+            <td class="cells" id="num9" onclick="newGame.play(this)"></td>
+        </tr>
+    </table>
+
+
+
+    <script src="ticTacToe.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
